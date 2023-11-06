@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: #343333;
+}
+
+/*Estilo do cabeçalho*/
+
+
+    .cabecalho{
+        display: grid;
+        grid-auto-flow: column;
+        height: 100px;
+        background-color: #3C403A;
+        color: #72FF03;
+    }
+
+    #container-user{
+        display: grid;
+        grid-auto-flow: column;
+        width: 100px;
+    }
+    #thunder{
+        padding-right: 0;
+        margin-right: 0;
+    }
+    #container-user h1{
+        padding-top: 40%;
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+    #menu{
+        display: grid;
+        grid-auto-flow: column;
+        font-size: 20px;
+        text-align: center;
+        width: 500px;
+        margin-left: 700px;
+    }
+
+    
+    #menu h1{
+        font-size: 20px;
+        margin-top: 0;
+        font-weight: normal;
+        padding-top: 40px;
+    }
+
+
+
+
+/* Estilo Corpo do Site */
+
+    #main-container{
+        background-color: #343333;
+        display: grid;
+        grid-auto-flow: column;
+        height: 500px;
+    }
+
+    #port-container{
+        display: grid;
+        grid-auto-flow: row;
+        height: 500px;
+    }
+
+    #port-text{
+        margin-top: 130px;
+        margin-left: 130px;
+    }
+    #cards{
+        display: grid;
+        grid-auto-flow: column;
+        margin-top: 80px;
+        padding-left: 130px;
+        width: 500px;
+    }
+
+    #divisoria{
+        height: 200px;
+        margin-top: 60px;
+    }
+
+    #robot-container{
+        display: grid;
+        grid-auto-flow: row;
+        margin-top: 80px;
+        height: 250px;
+        color: white;
+        text-align: center;
+    }
+
+    #robot-container h1{
+        padding-right: 70px;
+    }
+
+    #kyojuru-bot{
+        margin-left: 80px;
+    }
+
+
+    /*Sobre*/
+
+    #sobre{
+        display: grid;
+        grid-auto-flow: column;
+        height: 500px;
+    }
+    #about-text{
+        margin-top: 150px;
+        padding-left: 80px;
+        padding-right: 0;
+        justify-content: center;
+        width: 650px;
+    }
+
+    #divisoria2{
+        height: 200px;
+        margin-top: 60px;
+        padding-left: 0;
+    }
+
+
+
+    /*Projetos*/
+    #projetos{
+        display: grid;
+        grid-auto-flow: column;
+        align-items: center;
+        margin-left: 50px;
+        height: 500px;
+        padding-top: 100px;
+    }
+
