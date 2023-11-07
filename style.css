@@ -7,6 +7,10 @@ body{
 /*Estilo do cabeçalho*/
 
 
+    header{
+        position: sticky;   
+        top: 0;
+    }
     .cabecalho{
         display: grid;
         grid-auto-flow: column;
@@ -33,7 +37,6 @@ body{
     #menu{
         display: grid;
         grid-auto-flow: column;
-        font-size: 20px;
         text-align: center;
         width: 500px;
         margin-left: 700px;
@@ -41,10 +44,16 @@ body{
 
     
     #menu h1{
-        font-size: 20px;
+        font-size: 22px;
         margin-top: 0;
         font-weight: normal;
         padding-top: 40px;
+    }
+
+    #menu h1:hover{
+        color: aqua;
+        cursor: pointer;
+        transform: scale(1.1);
     }
 
 
@@ -69,12 +78,20 @@ body{
         margin-top: 130px;
         margin-left: 130px;
     }
+
     #cards{
         display: grid;
         grid-auto-flow: column;
         margin-top: 80px;
         padding-left: 130px;
         width: 500px;
+    }
+
+    #linkedin:hover, 
+    #github:hover{
+        cursor: pointer;
+        transform: translateY(-7px);
+        transition-duration: 0.5s;
     }
 
     #divisoria{
@@ -97,7 +114,27 @@ body{
 
     #kyojuru-bot{
         margin-left: 80px;
+                
+				/* Aqui declaramos nossa animação inline */
+				animation: jump 3s linear infinite;
     }
+
+    @keyframes jump {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-30px);
+        }
+
+        100% {
+            transform: translateY(-0px);
+        }
+
+    }
+
+        
 
 
     /*Sobre*/
@@ -121,6 +158,10 @@ body{
         padding-left: 0;
     }
 
+    #vigilant-bot{
+        margin-left: 80px;
+    }
+
 
 
     /*Projetos*/
@@ -131,5 +172,15 @@ body{
         margin-left: 50px;
         height: 500px;
         padding-top: 100px;
+    }
+
+    #esquerda:hover, #direita:hover{
+        cursor: pointer;
+        transform: translateY(7px);
+        transition-duration: 0.5s;
+    }
+
+    .proj-cards{
+        cursor: pointer;
     }
 
