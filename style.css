@@ -2,14 +2,25 @@ body{
     margin: 0;
     font-family: 'Lexend Deca', sans-serif;
     background-color: #343333;
+    scroll-behavior: smooth;
+    overflow: hidden; /*retira o scroll*/
 }
+
+/* .container{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+   } */
 
 /*Estilo do cabeçalho*/
 
 
     header{
-        position: sticky;   
+        position: fixed; /*sticky*/
         top: 0;
+        width: 100%;
     }
     .cabecalho{
         display: grid;
@@ -18,6 +29,7 @@ body{
         background-color: #3C403A;
         color: #72FF03;
     }
+
 
     #container-user{
         display: grid;
@@ -40,6 +52,11 @@ body{
         text-align: center;
         width: 500px;
         margin-left: 700px;
+    }
+
+    #menu a{
+        text-decoration: none;
+        color: #72FF03;
     }
 
     
@@ -66,12 +83,13 @@ body{
         display: grid;
         grid-auto-flow: column;
         height: 500px;
+        padding-top: 80px;
+        /* height: 100%; */
     }
 
     #port-container{
         display: grid;
         grid-auto-flow: row;
-        height: 500px;
     }
 
     #port-text{
@@ -143,6 +161,7 @@ body{
         display: grid;
         grid-auto-flow: column;
         height: 500px;
+        padding-top: 80px;
     }
     #about-text{
         margin-top: 150px;
@@ -166,21 +185,50 @@ body{
 
     /*Projetos*/
     #projetos{
-        display: grid;
+        /* display: grid;
         grid-auto-flow: column;
-        align-items: center;
-        margin-left: 50px;
+        align-items: center; */
         height: 500px;
-        padding-top: 100px;
+        margin-top: 100px;
     }
 
-    #esquerda:hover, #direita:hover{
-        cursor: pointer;
-        transform: translateY(7px);
-        transition-duration: 0.5s;
+    .swiper{
+        height: 500px;
+        width: 600px;
+
+    }
+
+    .swiper-wrapper{
+        padding-top: 50px;
+        
+        
+    }
+    .swiper-slide{
+        width: 400px;
+    }
+
+
+    .swiper-slide{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .swiper-slide a img{
+        padding-top: 25px;
+        width: 450px;
     }
 
     .proj-cards{
         cursor: pointer;
+    }
+
+
+    @media (max-width: 450px){
+        .swiper{
+            height: 270px;
+        }
     }
 
