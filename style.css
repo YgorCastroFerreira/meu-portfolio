@@ -28,6 +28,7 @@ body{
         height: 100px;
         background-color: #3C403A;
         color: #72FF03;
+        box-shadow: 0px 0px 20px #051f30;
     }
 
 
@@ -35,6 +36,10 @@ body{
         display: grid;
         grid-auto-flow: column;
         width: 100px;
+    }
+
+    #container-user h1{
+        /* color:#eeff03; */
     }
     #thunder{
         padding-right: 0;
@@ -46,19 +51,14 @@ body{
         font-weight: normal;
     }
 
-    #menu{
+
+    /* #menu{
         display: grid;
         grid-auto-flow: column;
         text-align: center;
         width: 500px;
         margin-left: 700px;
-    }
-
-    #menu a{
-        text-decoration: none;
-        color: #72FF03;
-    }
-
+    } */
     
     #menu h1{
         font-size: 22px;
@@ -73,6 +73,45 @@ body{
         transform: scale(1.1);
     }
 
+
+    #menu ul{
+        display: flex;
+        margin:0;
+        padding: 0;
+        text-align: center;
+        justify-content: end;
+        
+    }
+
+    #menu li{
+        display: inline-block;
+        text-decoration: none;
+        padding-right: 50px;
+    }
+    
+    .dropdown-menu{
+        position: absolute;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom: 1px solid #03101f;
+        background-color: #3C403A;
+        width: 100px;
+        align-items: center;
+        text-align:center;
+        margin-right: 35px;
+        display: none;
+        /* box-shadow: 0px 15px 20px #051f30; */
+        
+    }
+    .dropdown-menu p:hover{
+        color:coral;
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+    .dropdown:hover .dropdown-menu{
+        display: block;
+    }
 
 
 
